@@ -16,5 +16,4 @@ class MainPage(BasePage):
     def click_registration_title(self):
         reg_title = BasePage.find_element(self, Locators.reg_title_xpath)
         reg_title.click()
-
-        return reg_title
+        return reg_title.text

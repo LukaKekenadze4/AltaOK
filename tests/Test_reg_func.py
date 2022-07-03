@@ -42,7 +42,9 @@ class Test_registration_functionality:
     @allure.title("click registration title")
     @allure.description("when the modal window open,then click on the title of registration")
     def test_click_registration_title(self):
-        MP.click_registration_title()
+        reg_title = MP.click_registration_title()
+        with assume:
+            assert reg_title == 'რეგისტრაცია'
 
     @allure.title("input mail")
     @allure.description("when I go to the register page i should input my own mail")
