@@ -56,5 +56,5 @@ class RegistrPage(BasePage):
         return checkbox_label
 
     def click_registr_button(self):
-        registration_button = BasePage.find_element(self, Locators.registr_button_xpath)
+        registration_button = BasePage.find_element(self, Locators.registration_button_xpath)
         return registration_button
