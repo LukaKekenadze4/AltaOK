@@ -56,7 +56,7 @@ class Test_registration_functionality:
         email_field_label = RP.email_field_label()
         with assume:
             assert email_field_label.text == 'ელ-ფოსტა'
-        input_mail.send_keys('loyaj83370@jrvps.com')
+        input_mail.send_keys('luka1@gmail.com')
 
     @allure.title("input password")
     @allure.description("when I go to the register page i should input my own password")
@@ -105,10 +105,10 @@ class Test_registration_functionality:
             assert check_box_title.text == 'დაეთანხმეთ საიტის მოხმარების წესებსა და პირობებს'
         check.click()
 
-    # @allure.title("click registration button")
-    # @allure.description("when I go to the register page i should confirm")
-    # def test_click_reg_button(self):
-    #     reg_button = RP.click_registr_button()
-    #     with assume:
-    #         assert reg_button.text == 'რეგისტრაცია'
-    #     reg_button.click()
+    @allure.title("click registration button")
+    @allure.description("when I go to the register page i should confirm")
+    def test_click_reg_button(self):
+        reg_button = RP.click_registration()
+        # with assume:
+        #     assert reg_button.text == 'რეგისტრაცია'
+        reg_button.click()
