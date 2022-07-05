@@ -1,6 +1,7 @@
 from pages.BasePage import BasePage
-from locators.locators import Locators
-import time
+from locators.MainPageLocators import MainLocators
+
+MPL = MainLocators()
 
 
 class MainPage(BasePage):
@@ -8,9 +9,9 @@ class MainPage(BasePage):
         pass
 
     def click_registration_button(self):
-        reg_button = BasePage.find_element(self, Locators.reg_button_xpath)
+        reg_button = BasePage.find_element(self, MPL.reg_button_xpath)
         return reg_button
 
     def click_registration_title(self):
-        reg_title = BasePage.find_element(self, Locators.reg_title_xpath)
+        reg_title = BasePage.find_element(self, MPL.reg_title_xpath)
         return reg_title
