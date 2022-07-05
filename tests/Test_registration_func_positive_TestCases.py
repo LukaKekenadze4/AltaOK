@@ -51,6 +51,10 @@ class Test_registration_functionality:
         reg_title.click()
 
     # Registration Page Tests
+    # """
+    #     Positive Test Cases
+    # """
+
     @allure.title("input mail")
     @allure.description("when I go to the register page i should input my own mail")
     def test_input_email(self):
@@ -140,4 +144,3 @@ class Test_registration_functionality:
     def test_click_submit_button(self):
         button_login = LP.click_submit_button()
         button_login.click()
-

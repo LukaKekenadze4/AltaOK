@@ -9,7 +9,7 @@ class Driver:
     options = Options()
     options.add_argument("--headless")
 
-    driver = webdriver.Chrome("chromedriver",options=options)
+    driver = webdriver.Chrome("chromedriver")
     driver.maximize_window()
     # driver.set_window_size(1440, 768)
     driver.get("https://alta.ge/")

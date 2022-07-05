@@ -1,7 +1,6 @@
 from pages.BasePage import BasePage
 from locators.RegistrationPageLocators import RegistrationLocator
 
-
 RPL = RegistrationLocator()
 
 
@@ -60,3 +59,21 @@ class RegistrPage(BasePage):
     def click_registration(self):
         registr_button = BasePage.find_element(self, RPL.registration_button_xpath)
         return registr_button
+
+    # valid messages
+
+    def check_mail_valid_mess(self):
+        email_valid = BasePage.find_element(self, RPL.email_valid_mess)
+        return email_valid
+
+    def check_passwd_valid_mess(self):
+        passwd_valid = BasePage.find_element(self, RPL.passwd_valid_mess)
+        return passwd_valid
+
+    def check_re_pass_valid_mess(self):
+        re_pass_valid = BasePage.find_element(self, RPL.re_pass_valid_mess)
+        return re_pass_valid
+
+    def check_terms_valid_mess(self):
+        terms_valid = BasePage.find_element(self, RPL.terms_valid_mess)
+        return terms_valid

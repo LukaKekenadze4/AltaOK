@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class RegistrationLocator:
     # RegistrationPageLocators
     email_field_label_xpath = (
@@ -28,3 +29,13 @@ class RegistrationLocator:
 
     registration_button_xpath = (
         By.XPATH, '//*[@id="tygh_main_container"]/div[4]/div/div/div[2]/div/div/div/form/div[7]/button')
+
+    # ValidMessageLocators
+
+    email_valid_mess = (By.ID, 'email_error_message')
+
+    passwd_valid_mess = (By.ID, 'password1_error_message')
+
+    re_pass_valid_mess = (By.ID, 'password2_error_message')
+
+    terms_valid_mess = (By.ID, 'id_accept_terms_site_error_message')
