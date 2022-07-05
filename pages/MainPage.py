@@ -8,7 +8,7 @@ class MainPage(BasePage):
     def __init__(self):
         pass
 
-    def click_registration_button(self):
+    def click_registration_login_button(self):
         reg_button = BasePage.find_element(self, MPL.reg_button_xpath)
         return reg_button
 
