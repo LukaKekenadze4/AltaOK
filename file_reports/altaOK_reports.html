@@ -243,7 +243,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>altaOK_reports.html</h1>
-    <p>Report generated on 05-Jul-2022 at 16:59:07 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 06-Jul-2022 at 17:04:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.8.6</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 2.93 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>17 tests ran in 9.82 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">17 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -274,11 +274,20 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_reg_button_6::teardown</td>
+          <td class="col-duration">0.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"><span class="error">E   selenium.common.exceptions.WebDriverException: Message: unknown error: unexpected command response</span><br/>      (Session info: chrome=103.0.5060.114)<br/>    Stacktrace:<br/>    Backtrace:<br/>    	Ordinal0 [0x008B6463+2188387]<br/>    	Ordinal0 [0x0084E461+1762401]<br/>    	Ordinal0 [0x00763D78+802168]<br/>    	Ordinal0 [0x00757210+750096]<br/>    	Ordinal0 [0x0075675A+747354]<br/>    	Ordinal0 [0x00755D3F+744767]<br/>    	Ordinal0 [0x0075557C+742780]<br/>    	Ordinal0 [0x00769BF3+826355]<br/>    	Ordinal0 [0x007BCF6D+1167213]<br/>    	Ordinal0 [0x007AC5F6+1099254]<br/>    	Ordinal0 [0x00786BE0+945120]<br/>    	Ordinal0 [0x00787AD6+948950]<br/>    	GetHandleVerifier [0x00B571F2+2712546]<br/>    	GetHandleVerifier [0x00B4886D+2652765]<br/>    	GetHandleVerifier [0x0094002A+520730]<br/>    	GetHandleVerifier [0x0093EE06+516086]<br/>    	Ordinal0 [0x0085468B+1787531]<br/>    	Ordinal0 [0x00858E88+1805960]<br/>    	Ordinal0 [0x00858F75+1806197]<br/>    	Ordinal0 [0x00861DF1+1842673]<br/>    	BaseThreadInitThunk [0x767BFA29+25]<br/>    	RtlGetAppContainerNamedObjectPath [0x779E7A9E+286]<br/>    	RtlGetAppContainerNamedObjectPath [0x779E7A6E+238]<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_registration_button</td>
-          <td class="col-duration">1.25</td>
+          <td class="col-duration">1.29</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -287,7 +296,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_registration_title</td>
-          <td class="col-duration">0.35</td>
+          <td class="col-duration">0.40</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -295,8 +304,8 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_reg_button</td>
-          <td class="col-duration">0.10</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_reg_button_2</td>
+          <td class="col-duration">0.09</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -304,8 +313,125 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_check_valid_messages</td>
-          <td class="col-duration">0.16</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_check_valid_messages_1</td>
+          <td class="col-duration">0.17</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_input_email</td>
+          <td class="col-duration">0.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_check_valid_message_2</td>
+          <td class="col-duration">0.08</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_clear_email_field</td>
+          <td class="col-duration">0.04</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_input_password</td>
+          <td class="col-duration">0.11</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_reg_button_3</td>
+          <td class="col-duration">0.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_check_valid_message_3</td>
+          <td class="col-duration">0.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_clear_passwd_field</td>
+          <td class="col-duration">0.04</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_input_re_password</td>
+          <td class="col-duration">0.11</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_reg_button_5</td>
+          <td class="col-duration">0.08</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_check_valid_message_4</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_clear_re_passwd_field</td>
+          <td class="col-duration">3.05</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_check_box</td>
+          <td class="col-duration">0.08</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/Test_registration_func_negative_TestCases.py::Test_registration_functionality::test_click_reg_button_6</td>
+          <td class="col-duration">0.06</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">

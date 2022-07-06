@@ -6,7 +6,7 @@ import time
 
 # Pages Imports
 from pages.MainPage import MainPage
-from pages.RegistrationPage import RegistrPage
+from pages.RegistrationPage import Registr_Page
 from pages.LoginPageModal import LoginPage
 # -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # clear reports files(images/allure)
@@ -24,7 +24,7 @@ for root, dirs, files in os.walk(mypath1):
 # -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # tests
 MP = MainPage()
-RP = RegistrPage()
+RP = Registr_Page()
 LP = LoginPage()
 
 

@@ -4,7 +4,7 @@ from locators.RegistrationPageLocators import RegistrationLocator
 RPL = RegistrationLocator()
 
 
-class RegistrPage(BasePage):
+class Registr_Page(BasePage):
     def __init__(self):
         pass
 

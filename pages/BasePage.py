@@ -7,6 +7,7 @@ class BasePage(Driver):
     """
         this is the base page which waits for the element and checks if the element is visible
     """
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -37,3 +38,7 @@ class BasePage(Driver):
                     locator[0], locator[1]
                 )
             )
+
+    def find_children(self, parent):
+        children = parent.find_elements_by_xpath(".//*")
+        return children
